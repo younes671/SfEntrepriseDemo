@@ -22,7 +22,6 @@
                 </tr>
             </thead>
             <tbody>
-                {# employes avec un s c'est la collection employes qu'on retrouve dans Entreprise.php qui communique directement avec la base de donnée  #}
                 {% for employe in entreprise.employes %}
                 <tr><td><a href="{{ path('show_employe', {'id': employe.id}) }}">{{ employe }}</a></td></tr>
                 {% endfor %}
